@@ -29,18 +29,37 @@
         .font-roboto {
             font-family: "Roboto", sans-serif;
         }
-
     </style>
 </head>
 
 <body>
-    <header class="bg-amber-100 md:px-8">
+    <header class="bg-amber-100 md:px-8 px-4">
         <!-- nav section -->
-        <nav>
-
+        <nav class="max-w-7xl mx-auto flex items-center justify-between py-2">
+            <div>
+                <a href="">
+                    <img class="w-6/12 sm:w-96 h-auto" src="./icons/logo.png" alt="">
+                </a>
+                <!-- <h2 class="text-3xl font-bold"><span class="text-[#A4BC46]">Penguin</span> Fashion</h2> -->
+            </div>
+            <div>
+                <div class="sm:hidden">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                        fill="#00000">
+                        <path
+                            d="M279.13-621.48V-744h600.78v122.52H279.13Zm0 202.52v-122.52h600.78v122.52H279.13Zm0 201.96v-121.96h600.78V-217H279.13Zm-137.4-400.74q-25.77 0-43.71-18.67-17.93-18.67-17.93-45.21 0-26.53 17.93-45.39 17.94-18.86 43.71-18.86 26.91 0 45.26 18.69 18.36 18.69 18.36 46.32 0 25.93-18.36 44.52-18.35 18.6-45.26 18.6Zm0 202.09q-25.77 0-43.71-19.05-17.93-19.04-17.93-45.57 0-27.23 17.93-45.66 17.94-18.42 43.71-18.42 26.91 0 45.26 18.42 18.36 18.43 18.36 45.66 0 26.53-18.36 45.57-18.35 19.05-45.26 19.05Zm0 199.96q-25.77 0-43.71-18.68-17.93-18.67-17.93-45.2 0-26.54 17.93-45.4 17.94-18.86 43.71-18.86 26.91 0 45.26 18.81 18.36 18.8 18.36 45.71 0 26.42-18.36 45.02-18.35 18.6-45.26 18.6Z" />
+                    </svg>
+                </div>
+                <ul class="sm:flex gap-12 font-medium hidden sm:block">
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Product</a></li>
+                    <li><a href="">About US</a></li>
+                    <li><a href="">Contact US</a></li>
+                </ul>
+            </div>
         </nav>
         <!-- banner section -->
-        <div class="flex justify-between items-center py-20 flex-col md:flex-row  max-w-7xl mx-auto">
+        <div class="flex justify-between items-center py-4 sm:py-20 flex-col md:flex-row  max-w-7xl mx-auto px-4">
             <div class="space-y-3">
                 <h2 class="text-6xl text-[#363958] uppercase font-bebas">
                     <span class="text-[#FABE4C]">Be the Penguins</span>
@@ -63,14 +82,14 @@
             </div>
         </div>
     </header>
-    <main class="max-w-7xl mx-auto mt-12">
+    <main class="max-w-7xl mx-auto mt-12 px-4">
         <!-- Woman Jacket section -->
         <section>
             <h3 class="text-5xl font-bebas mb-4 mt-9 text-[#363958]">Woman Jacket</h3>
             <!-- Jacket container  -->
             <div class="font-roboto grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7">
                 <!-- Jacket 1 -->
-                <div class="space-x-3 drop-shadow-lg">
+                <div class="space-x-3 drop-shadow-lg bg-white p-5 rounded-lg">
                     <div class="bg-[#F1F1F1] p-5 rounded-2xl">
                         <img src="./images/jacket-1.png" alt="">
                     </div>
@@ -80,7 +99,7 @@
                     <div class="flex justify-between">
                         <h3 class="text-4xl font-black text-[#FABE4C]">$234</h3>
                         <button
-                            class="px-8 py-5 bg-gradient-to-r from-[#A4BC46] to-[#85A019] rounded-lg uppercase font-medium flex items-center gap-1 text-white font-bebas"><svg
+                            class="active:scale-95 px-8 py-5 bg-gradient-to-r from-[#A4BC46] to-[#85A019] rounded-lg uppercase font-medium flex items-center gap-1 text-white font-bebas"><svg
                                 xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                                 stroke="currentColor" class="size-6 inline">
                                 <path stroke-linecap="round" stroke-linejoin="round"
@@ -90,7 +109,7 @@
                     </div>
                 </div>
                 <!-- Jacket 2 -->
-                <div class="space-x-3 drop-shadow-lg">
+                <div class="space-x-3 drop-shadow-lg bg-white p-5 rounded-lg">
                     <div class="bg-[#F1F1F1] p-5 rounded-2xl">
                         <img src="./images/jacket-2.png" alt="">
                     </div>
@@ -110,7 +129,7 @@
                     </div>
                 </div>
                 <!-- Jacket 3 -->
-                <div class="space-x-3 drop-shadow-lg">
+                <div class="space-x-3 drop-shadow-lg bg-white p-5 rounded-lg">
                     <div class="bg-[#F1F1F1] p-5 rounded-2xl">
                         <img src="./images/jacket-3.png" alt="">
                     </div>
@@ -135,7 +154,7 @@
             <h3 class="text-5xl font-bebas text-[#363958] my-9">Man Jacket</h3>
             <!-- Jacket 4 -->
             <div class=" grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-7">
-                <div class="drop-shadow-lg">
+                <div class="drop-shadow-lg bg-white p-5 rounded-lg">
                     <div class="space-x-3 font-roboto ">
                         <div class="bg-[#F1F1F1] p-5 rounded-lg">
                             <img src="./images/jacket-4.png" alt="">
@@ -157,7 +176,7 @@
                     </div>
                 </div>
                 <!-- jacket 5 -->
-                <div class="drop-shadow-lg">
+                <div class="drop-shadow-lg bg-white p-5 rounded-lg">
                     <div class="space-x-3 font-roboto ">
                         <div class="bg-[#F1F1F1] p-5 rounded-lg">
                             <img src="./images/jacket-5.png" alt="">
@@ -179,7 +198,7 @@
                     </div>
                 </div>
                 <!-- jacket-6 -->
-                <div class="drop-shadow-lg">
+                <div class="drop-shadow-lg bg-white p-5 rounded-lg">
                     <div class="space-x-3 font-roboto ">
                         <div class="bg-[#F1F1F1] p-5 rounded-lg">
                             <img src="./images/jacket-6.png" alt="">
@@ -204,11 +223,12 @@
         </section>
         <!-- jacket section end -->
     </main>
-    <footer class="max-w-7xl mx-auto mt-12">
+    <footer class="max-w-7xl mx-auto mt-12 px-4">
         <!-- our footer section -->
         <section class="font-roboto flex items-center gap-7 justify-between flex-wrap-reverse lg:flex-nowrap">
             <div class="space-y-4 mx-auto">
-                <div class="flex sm:flex-nowrap flex-wrap items-center p-5 drop-shadow-lg bg-white sm:gap-7 rounded-2xl text-center sm:text-left">
+                <div
+                    class="flex sm:flex-nowrap flex-wrap items-center p-5 drop-shadow-lg bg-white sm:gap-7 rounded-2xl text-center sm:text-left">
                     <img class="w-20 mx-auto sm:mx-0" src="./icons/house.png" alt="">
                     <div>
                         <h2 class="text-[#363958] text-2xl font-black">Find the Perfect Fit</h2>
@@ -216,7 +236,8 @@
                             offer styles for every body.</p>
                     </div>
                 </div>
-                <div class="flex sm:flex-nowrap flex-wrap items-center p-5 drop-shadow-lg bg-white sm:gap-7 rounded-2xl text-center sm:text-left">
+                <div
+                    class="flex sm:flex-nowrap flex-wrap items-center p-5 drop-shadow-lg bg-white sm:gap-7 rounded-2xl text-center sm:text-left">
                     <img class="w-20 mx-auto sm:mx-0" src="./icons/box.png" alt="">
                     <div>
                         <h2 class="text-[#363958] text-2xl font-black">Free Exchanges</h2>
@@ -224,7 +245,8 @@
                             with peace of mind.</p>
                     </div>
                 </div>
-                <div class="flex sm:flex-nowrap flex-wrap items-center p-5 drop-shadow-lg bg-white sm:gap-7 rounded-2xl text-center sm:text-left">
+                <div
+                    class="flex sm:flex-nowrap flex-wrap items-center p-5 drop-shadow-lg bg-white sm:gap-7 rounded-2xl text-center sm:text-left">
                     <img class="w-20 mx-auto sm:mx-0" src="./icons/question.png" alt="">
                     <div>
                         <h2 class="text-[#363958] text-2xl font-black">Contact Our Seller</h2>
